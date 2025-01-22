@@ -42,55 +42,51 @@ from datetime import datetime
 
 class Vehiculo:
 
-
     def __init__(self, marca, modelo, anyo):
        
-        self.marca = marca
-        self.modelo = modelo
-        self.anyo = anyo
+        self.__marca = marca
+        self.__modelo = modelo
+        self.__anyo = anyo
 
-   
     def mostrarInfo(self):
-        print(f"Vehiculo marca: {self.marca}, modelo: {self.modelo} del año {self.anyo}.")
+        print(f"Vehiculo marca: {self.__marca}, modelo: {self.__modelo} del año {self.__anyo}.")
 
   
-
     def mostrarAntiguedad(self):
            anio_actual = datetime.now().year
-           ant = anio_actual - self.anyo 
+           ant = anio_actual - self.__anyo 
            print(f"La edad de este vehículo es de: {ant} ")
            return ant
 
-# Crear una instancia de Vehiculo
-mi_vehiculo = Vehiculo("Toyota", "Corolla", 2020)
-
-# Mostrar información del vehículo
-mi_vehiculo.mostrarInfo()
-mi_vehiculo.mostrarAntiguedad()
+    @staticmethod
+    def comparadorEdad( vechiculo1, vehiculo2):
+        dif = (abs)(vechiculo1.mostrarAntiguedad() - vehiculo2.mostrarAntiguedad())
+        print(f"la Difeirencia de años son {dif}")
 
 class Auto(Vehiculo):
      
-
     def __init__(self, marca, modelo, anyo, numPuertas):
 
         super().__init__(marca, modelo, anyo)
        
-        self.numPuertas = numPuertas
+        self.__numPuertas = numPuertas
         
     def mostrarInfo(self):
-        print(f"Vehiculo marca: {self.marca}, modelo: {self.modelo} del año {self.anyo}, con {self.numPuertas} puertas .")  
+        super().mostrarInfo()
+
+        print(f" con {self.__numPuertas} puertas.")  
 
 class Moto(Vehiculo):
      
-
     def __init__(self, marca, modelo, anyo, disenyo):
 
         super().__init__(marca, modelo, anyo)
        
-        self.disenyo = disenyo
+        self.__disenyo = disenyo
         
     def mostrarInfo(self):
-        print(f"Vehiculo marca: {self.marca}, modelo: {self.modelo} del año {self.anyo}, con diseño {self.disenyo}  .")  
+        super().mostrarInfo()
+        print(f" con diseño {self.__disenyo}.")  
 
 class Camion(Vehiculo):
      
@@ -99,19 +95,20 @@ class Camion(Vehiculo):
 
         super().__init__(marca, modelo, anyo)
        
-        self.capCarga = capCarga
+        self.__capCarga = capCarga
         
     def mostrarInfo(self):
-        print(f"Vehiculo marca: {self.marca}, modelo: {self.modelo} del año {self.anyo}, con {self.capCarga} toneladas de capacidad de carga .")  
+        super().mostrarInfo()
+        print(f" con {self.__capCarga} toneladas de capacidad de carga.")  
 
 
 
 
-auto1 = Auto("Ferrari", "GTO", 1990, 2)
-moto1 = Moto("Honda", "SevenFifty", 2000, "Naked")
-camion1 = Camion("Barreiros", "H978", 1975, 3)
+auto = Auto("Ferrari", "GTO", 1990, 2)
+moto = Moto("Honda", "SevenFifty", 2000, "Naked")
+camion = Camion("Barreiros", "H978", 1975, 10.5)
 
-autosLocos =[auto1, moto1, camion1]
+autosLocos =[auto, moto, camion]
 
 def esModerno(ant):
     if ant<=5:
@@ -126,9 +123,5 @@ def gestorAutos(lista):
 
 gestorAutos(autosLocos)
 
-@staticmethod
-def comparadorEdad(vechiculo1, vehiculo2):
-    dif = (abs)(vechiculo1.mostrarAntiguedad() - vehiculo2.mostrarAntiguedad())
-    print(f"la Difeirencia de años son {dif}")
-
-comparadorEdad(moto1, auto1)
+Vehiculo.comparadorEdad(moto, auto)
+camion.comparadorEdad(auto, camion)
