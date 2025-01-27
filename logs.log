@@ -1,0 +1,42 @@
+2025-01-27 16:02:45,920 - root - DEBUG - Este es un mensaje de depuración
+2025-01-27 16:02:45,920 - root - INFO - Este es un mensaje informativo
+2025-01-27 16:02:45,921 - root - WARNING - Este es un mensaje de advertencia
+2025-01-27 16:02:45,921 - root - ERROR - Este es un mensaje de error
+2025-01-27 16:02:45,921 - root - CRITICAL - Este es un mensaje crítico
+2025-01-27 16:02:45,921 - root - DEBUG - Este es otro mensaje de depuración
+2025-01-27 16:05:33,039 - root - DEBUG - Este es un mensaje de depuración
+2025-01-27 16:05:33,039 - root - INFO - Este es un mensaje informativo
+2025-01-27 16:05:33,039 - root - WARNING - Este es un mensaje de advertencia
+2025-01-27 16:05:33,039 - root - ERROR - Este es un mensaje de error
+2025-01-27 16:05:33,039 - root - CRITICAL - Este es un mensaje crítico
+2025-01-27 16:05:33,039 - root - DEBUG - Este es otro mensaje de depuración
+16H:07M:05S - root - DEBUG - Este es un mensaje de depuración
+16H:07M:05S - root - INFO - Este es un mensaje informativo
+16H:07M:05S - root - WARNING - Este es un mensaje de advertencia
+16H:07M:05S - root - ERROR - Este es un mensaje de error
+16H:07M:05S - root - CRITICAL - Este es un mensaje crítico
+16H:07M:05S - root - DEBUG - Este es otro mensaje de depuración
+16H:07M:16S - root - DEBUG - Este es un mensaje de depuración
+16H:07M:16S - root - INFO - Este es un mensaje informativo
+16H:07M:16S - root - WARNING - Este es un mensaje de advertencia
+16H:07M:16S - root - ERROR - Este es un mensaje de error
+16H:07M:16S - root - CRITICAL - Este es un mensaje crítico
+16H:07M:16S - root - DEBUG - Este es otro mensaje de depuración
+16H:07M:17S - root - DEBUG - Este es un mensaje de depuración
+16H:07M:17S - root - INFO - Este es un mensaje informativo
+16H:07M:17S - root - WARNING - Este es un mensaje de advertencia
+16H:07M:17S - root - ERROR - Este es un mensaje de error
+16H:07M:17S - root - CRITICAL - Este es un mensaje crítico
+16H:07M:17S - root - DEBUG - Este es otro mensaje de depuración
+2025-01-27 16:07:25,335 - root - DEBUG - Este es un mensaje de depuración
+2025-01-27 16:07:25,335 - root - INFO - Este es un mensaje informativo
+2025-01-27 16:07:25,335 - root - WARNING - Este es un mensaje de advertencia
+2025-01-27 16:07:25,335 - root - ERROR - Este es un mensaje de error
+2025-01-27 16:07:25,335 - root - CRITICAL - Este es un mensaje crítico
+2025-01-27 16:07:25,336 - root - DEBUG - Este es otro mensaje de depuración
+2025-01-27 16:07:28,749 - root - DEBUG - Este es un mensaje de depuración
+2025-01-27 16:07:28,750 - root - INFO - Este es un mensaje informativo
+2025-01-27 16:07:28,750 - root - WARNING - Este es un mensaje de advertencia
+2025-01-27 16:07:28,750 - root - ERROR - Este es un mensaje de error
+2025-01-27 16:07:28,750 - root - CRITICAL - Este es un mensaje crítico
+2025-01-27 16:07:28,750 - root - DEBUG - Este es otro mensaje de depuración
